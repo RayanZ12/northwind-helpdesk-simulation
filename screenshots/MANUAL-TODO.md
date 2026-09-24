@@ -31,4 +31,11 @@ automatically this run.
 - `TKT-003-01-osticket-ticket-view.png` — osTicket agent panel, ticket #337564 (closed,
   showing reply and internal note). Same capture limitation as TKT-001.
 
+## TKT-004
+
+- `TKT-004-01-osticket-ticket-view.png` — osTicket agent panel, ticket #643065 (closed,
+  showing reply and internal note). Same capture limitation as TKT-001.
+- `TKT-004-02-aduc-disabled-accounts-ou.png` — optional: ADUC view of the new "Disabled
+  Accounts" OU with daniel.okonkwo inside, disabled, no group memberships.
+
 Naming: `TKT-0XX-NN-description.png`, NN sequential per ticket.

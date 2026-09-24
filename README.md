@@ -34,7 +34,7 @@ Legend: ✅ done · 🔄 in progress · 📋 planned
 | TKT-001 | Accounts / Authentication | Account locked out — misleading "wrong password" error | P2 | ✅ | [TKT-001](kb/TKT-001.md) |
 | TKT-002 | Accounts / Authentication | New starter needs an account (service request) | P3 | ✅ | [TKT-002](kb/TKT-002.md) |
 | TKT-003 | Accounts / Authentication | Password expired, replacement rejected by complexity policy | P2 | ✅ | [TKT-003](kb/TKT-003.md) |
-| TKT-004 | | | | 📋 | — |
+| TKT-004 | Accounts / Authentication | Former employee still has access — offboarding gap | P2 | ✅ | [TKT-004](kb/TKT-004.md) |
 | TKT-005 | | | | 📋 | — |
 | TKT-006 | | | | 📋 | — |
 | TKT-007 | | | | 📋 | — |
