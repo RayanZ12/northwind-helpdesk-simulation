@@ -68,4 +68,13 @@ screenshot to a file on disk.
   after the fix) — only meaningful if captured before the fix was applied, so this one is
   a nice-to-have that was missed in this run rather than something to redo.
 
+## TKT-006
+
+- `TKT-006-01-osticket-ticket-view.png` — osTicket agent panel, ticket #351230 (closed,
+  showing the approval-request note, the owner-approval note, the user reply and the
+  technical note). Same capture limitation as TKT-001.
+- `TKT-006-02-fs01-effective-access.png` — optional: FS01, *C:\Shares\Departments\Finance >
+  Properties > Security > Advanced > Effective Access*, user `ryan.thompson` — shows
+  read/list allowed, write/delete denied. Needs an interactive console logon on FS01.
+
 Naming: `TKT-0XX-NN-description.png`, NN sequential per ticket.
