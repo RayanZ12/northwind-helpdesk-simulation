@@ -74,7 +74,7 @@ osTicket captures still listed for TKT-001 → TKT-005 below can now be produced
 
 ## TKT-006
 
-- ~~`TKT-006-01-osticket-ticket-view.png`~~ — **captured automatically** (see method below).
+- ~~`TKT-006-01-osticket-ticket-view.png`~~ — **captured automatically** (method described at the top of this file).
 - `TKT-006-02-fs01-effective-access.png` — optional: FS01, *C:\Shares\Departments\Finance >
   Properties > Security > Advanced > Effective Access*, user `ryan.thompson` — shows
   read/list allowed, write/delete denied. Needs an interactive console logon on FS01.
