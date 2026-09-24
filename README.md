@@ -31,7 +31,7 @@ Legend: ✅ done · 🔄 in progress · 📋 planned
 
 | ID | Category | Title | Priority | Status | KB |
 |---|---|---|---|---|---|
-| TKT-001 | Accounts / Authentication | Account locked out — misleading "wrong password" error | P2 | 📋 | — |
+| TKT-001 | Accounts / Authentication | Account locked out — misleading "wrong password" error | P2 | ✅ | [TKT-001](kb/TKT-001.md) |
 | TKT-002 | | | | 📋 | — |
 | TKT-003 | | | | 📋 | — |
 | TKT-004 | | | | 📋 | — |
