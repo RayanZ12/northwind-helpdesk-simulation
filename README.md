@@ -35,7 +35,7 @@ Legend: ✅ done · 🔄 in progress · 📋 planned
 | TKT-002 | Accounts / Authentication | New starter needs an account (service request) | P3 | ✅ | [TKT-002](kb/TKT-002.md) |
 | TKT-003 | Accounts / Authentication | Password expired, replacement rejected by complexity policy | P2 | ✅ | [TKT-003](kb/TKT-003.md) |
 | TKT-004 | Accounts / Authentication | Former employee still has access — offboarding gap | P2 | ✅ | [TKT-004](kb/TKT-004.md) |
-| TKT-005 | | | | 📋 | — |
+| TKT-005 | Accounts / Authentication | Can log in on laptop but not the meeting room PC | P3 | ✅ | [TKT-005](kb/TKT-005.md) |
 | TKT-006 | | | | 📋 | — |
 | TKT-007 | | | | 📋 | — |
 | TKT-008 | | | | 📋 | — |

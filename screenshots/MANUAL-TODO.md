@@ -59,4 +59,13 @@ screenshot to a file on disk.
 - `TKT-004-02-aduc-disabled-accounts-ou.png` — optional: ADUC view of the new "Disabled
   Accounts" OU with daniel.okonkwo inside, disabled, no group memberships.
 
+## TKT-005
+
+- `TKT-005-01-osticket-ticket-view.png` — osTicket agent panel, ticket #582965 (closed,
+  showing the reply and internal note). Same capture limitation as TKT-001.
+- `TKT-005-02-aduc-olga-kovalenko-logonworkstations.png` — optional: ADUC *Account* tab for
+  `olga.kovalenko` showing the "Log On To" restriction (present during the fault, cleared
+  after the fix) — only meaningful if captured before the fix was applied, so this one is
+  a nice-to-have that was missed in this run rather than something to redo.
+
 Naming: `TKT-0XX-NN-description.png`, NN sequential per ticket.
