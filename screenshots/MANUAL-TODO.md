@@ -25,17 +25,11 @@ browser pane, the rendered ticket DOM is exported from the pane (scripts removed
 tokens stripped, `<base>` pointed at `/scp/`), posted to a throwaway receiver on
 `127.0.0.1` on the host, and rendered to PNG with headless Chrome. osTicket's CSS and
 icon font are public static files, so no credentials are involved at any point. The
-osTicket captures still listed for TKT-001 → TKT-005 below can now be produced this way
-(the tickets are still in osTicket, closed).
+osTicket captures for TKT-001 → TKT-005 were produced this way after the fact (closed state).
 
 ## TKT-001
 
-- `TKT-001-01-osticket-ticket-view.png` — osTicket agent panel, ticket #516340 (closed
-  state, showing routing, reply and internal note). The ticket was worked in the built-in
-  browser pane after Rayan logged in manually (Claude Code does not enter passwords into
-  login fields — see CLAUDE.md and the global safety rules). The browser tool has no
-  save-to-file action for an arbitrary screenshot, so this needs a manual capture: open
-  `http://127.0.0.1:8080/scp/tickets.php?id=2`, log in, screenshot, save as above.
+- ~~`TKT-001-01-osticket-ticket-view.png`~~ — **captured automatically** (method described at the top of this file).
 - `TKT-001-02-cl01-console.png` — optional/not required: the fault was injected via a
   scripted `PrincipalContext.ValidateCredentials` loop from CL01 (5 failed attempts) rather
   than an interactive logon at the CL01 console, so there is no lockout dialog to capture
@@ -46,27 +40,23 @@ osTicket captures still listed for TKT-001 → TKT-005 below can now be produced
 
 ## TKT-002
 
-- `TKT-002-01-osticket-ticket-view.png` — osTicket agent panel, ticket #949156 (closed,
-  showing reply and internal note). Same capture limitation as TKT-001.
+- ~~`TKT-002-01-osticket-ticket-view.png`~~ — **captured automatically** (method described at the top of this file).
 - `TKT-002-02-aduc-priya-raman.png` — optional: ADUC view of the new `priya.raman` account
   in `OU=Operations` and its `GG_Operations` membership, for portfolio visuals.
 
 ## TKT-003
 
-- `TKT-003-01-osticket-ticket-view.png` — osTicket agent panel, ticket #337564 (closed,
-  showing reply and internal note). Same capture limitation as TKT-001.
+- ~~`TKT-003-01-osticket-ticket-view.png`~~ — **captured automatically** (method described at the top of this file).
 
 ## TKT-004
 
-- `TKT-004-01-osticket-ticket-view.png` — osTicket agent panel, ticket #643065 (closed,
-  showing reply and internal note). Same capture limitation as TKT-001.
+- ~~`TKT-004-01-osticket-ticket-view.png`~~ — **captured automatically** (method described at the top of this file).
 - `TKT-004-02-aduc-disabled-accounts-ou.png` — optional: ADUC view of the new "Disabled
   Accounts" OU with daniel.okonkwo inside, disabled, no group memberships.
 
 ## TKT-005
 
-- `TKT-005-01-osticket-ticket-view.png` — osTicket agent panel, ticket #582965 (closed,
-  showing the reply and internal note). Same capture limitation as TKT-001.
+- ~~`TKT-005-01-osticket-ticket-view.png`~~ — **captured automatically** (method described at the top of this file).
 - `TKT-005-02-aduc-olga-kovalenko-logonworkstations.png` — optional: ADUC *Account* tab for
   `olga.kovalenko` showing the "Log On To" restriction (present during the fault, cleared
   after the fix) — only meaningful if captured before the fix was applied, so this one is
