@@ -26,4 +26,9 @@ automatically this run.
 - `TKT-002-02-aduc-priya-raman.png` — optional: ADUC view of the new `priya.raman` account
   in `OU=Operations` and its `GG_Operations` membership, for portfolio visuals.
 
+## TKT-003
+
+- `TKT-003-01-osticket-ticket-view.png` — osTicket agent panel, ticket #337564 (closed,
+  showing reply and internal note). Same capture limitation as TKT-001.
+
 Naming: `TKT-0XX-NN-description.png`, NN sequential per ticket.
