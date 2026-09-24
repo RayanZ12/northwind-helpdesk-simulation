@@ -1,0 +1,14 @@
+# Secrets — never commit
+.env
+.env.txt
+*.key
+
+# Local tooling
+node_modules/
+.playwright/
+*.log
+
+# OS noise
+Thumbs.db
+desktop.ini
+.DS_Store
