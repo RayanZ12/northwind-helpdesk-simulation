@@ -19,4 +19,11 @@ automatically this run.
   specifically wanted for the portfolio, in which case open the CL01 console window in
   VirtualBox first.
 
+## TKT-002
+
+- `TKT-002-01-osticket-ticket-view.png` — osTicket agent panel, ticket #949156 (closed,
+  showing reply and internal note). Same capture limitation as TKT-001.
+- `TKT-002-02-aduc-priya-raman.png` — optional: ADUC view of the new `priya.raman` account
+  in `OU=Operations` and its `GG_Operations` membership, for portfolio visuals.
+
 Naming: `TKT-0XX-NN-description.png`, NN sequential per ticket.
