@@ -3,6 +3,27 @@
 Screenshots that need to be taken by hand because Claude Code could not capture them
 automatically this run.
 
+**Update:** `VBoxManage controlvm <vm> screenshotpng` was initially failing (`E_FAIL`) on
+CL01/DC01. Root cause found: the console's screen was blanked (0 bpp framebuffer, likely
+the GPO screen-lock kicking in after idle time), which the VirtualBox screenshot API can't
+capture. Sending a keypress first (`VBoxManage controlvm <vm> keyboardputscancode 1c 9c`)
+wakes the display and screenshotpng then works — confirmed against CL01 and DC01, both
+just showed the idle lock screen (no ticket-relevant content).
+
+**Remaining real limitation:** this only captures whatever is *already* rendered on the
+console. Anything driven through WinRM (`Invoke-Command`) runs in a non-interactive
+session and never appears on the console framebuffer, so ADUC, GPMC, or any GUI tool I
+open remotely is invisible to this capture method. Getting a real ADUC/GPMC screenshot
+still requires an actual interactive logon on the VM console — which also means typing a
+password into the console, something this automation doesn't do (see CLAUDE.md and the
+global safety rules on credential entry). So: Rayan needs to log on to DC01/CL01's console
+himself (open the VM window in the VirtualBox app) for any GUI-tool screenshot; once he's
+logged in, Claude Code can take over the wake+screenshot capture from there.
+
+Same osTicket-agent-panel limitation as before: Claude drives the ticket in the built-in
+browser pane after Rayan logs in, but there's no tool available to save that pane's
+screenshot to a file on disk.
+
 ## TKT-001
 
 - `TKT-001-01-osticket-ticket-view.png` — osTicket agent panel, ticket #516340 (closed
