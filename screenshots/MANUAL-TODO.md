@@ -20,9 +20,13 @@ global safety rules on credential entry). So: Rayan needs to log on to DC01/CL01
 himself (open the VM window in the VirtualBox app) for any GUI-tool screenshot; once he's
 logged in, Claude Code can take over the wake+screenshot capture from there.
 
-Same osTicket-agent-panel limitation as before: Claude drives the ticket in the built-in
-browser pane after Rayan logs in, but there's no tool available to save that pane's
-screenshot to a file on disk.
+**osTicket agent panel — solved from TKT-006 on:** after Rayan logs in to the built-in
+browser pane, the rendered ticket DOM is exported from the pane (scripts removed, CSRF
+tokens stripped, `<base>` pointed at `/scp/`), posted to a throwaway receiver on
+`127.0.0.1` on the host, and rendered to PNG with headless Chrome. osTicket's CSS and
+icon font are public static files, so no credentials are involved at any point. The
+osTicket captures still listed for TKT-001 → TKT-005 below can now be produced this way
+(the tickets are still in osTicket, closed).
 
 ## TKT-001
 
@@ -70,9 +74,7 @@ screenshot to a file on disk.
 
 ## TKT-006
 
-- `TKT-006-01-osticket-ticket-view.png` — osTicket agent panel, ticket #351230 (closed,
-  showing the approval-request note, the owner-approval note, the user reply and the
-  technical note). Same capture limitation as TKT-001.
+- ~~`TKT-006-01-osticket-ticket-view.png`~~ — **captured automatically** (see method below).
 - `TKT-006-02-fs01-effective-access.png` — optional: FS01, *C:\Shares\Departments\Finance >
   Properties > Security > Advanced > Effective Access*, user `ryan.thompson` — shows
   read/list allowed, write/delete denied. Needs an interactive console logon on FS01.
