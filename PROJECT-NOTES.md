@@ -1,6 +1,6 @@
-# CLAUDE.md — Northwind Supply Lab: history, configuration & Project 2 workflow
+# PROJECT-NOTES.md — Northwind Supply Lab: history, configuration & Project 2 workflow
 
-Background for Claude Code: what has already been built, how, and why — plus the
+Background notes: what has already been built, how, and why — plus the
 exact workflow for finishing Project 2 (helpdesk tickets).
 Treat everything below as the current state of the lab. Do not rebuild or
 "fix" existing configuration without asking.
@@ -242,7 +242,7 @@ Managed with `VBoxManage natnetwork modify --netname NAT-Northwind --port-forwar
   share tickets → DC01 + FS01 + CL01; osTicket-only steps → HELP01.
   If RAM is short, create/close tickets in osTicket in a separate phase from the fault work.
 
-### Rules Claude Code follows for this lab (don't relitigate)
+### Rules followed for this lab (don't relitigate)
 - Never touch Active Directory configuration **outside the objects named in the current ticket**
   (e.g. unlocking the named user is fine; changing OUs, groups policy, other accounts is not).
 - Ask before any GPO change and before any network configuration change on a VM.
@@ -250,7 +250,7 @@ Managed with `VBoxManage natnetwork modify --netname NAT-Northwind --port-forwar
   update that file instead of pasting a password.
 - Security-setting changes (WinRM/PSRemoting enablement, firewall rules, WSMan TrustedHosts,
   Windows logon-right grants) are handed to the user as exact commands to run themselves —
-  Claude Code does not execute these directly.
+  They are not executed by the automation.
 
 ---
 

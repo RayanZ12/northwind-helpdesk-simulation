@@ -4,7 +4,7 @@
 .DESCRIPTION
     Dot-source this file. Uses WinRM through NAT Network port forwarding
     (127.0.0.1:55985/55986/55987) with Negotiate auth — Basic auth fails for
-    domain accounts on member servers (see CLAUDE.md section 6).
+    domain accounts on member servers (see PROJECT-NOTES.md section 6).
 .EXAMPLE
     . .\scripts\Connect-Lab.ps1
     Invoke-Lab -Vm DC01 -ScriptBlock { Search-ADAccount -LockedOut }

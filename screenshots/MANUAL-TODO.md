@@ -1,6 +1,6 @@
 # Manual screenshot TODO
 
-Screenshots that need to be taken by hand because Claude Code could not capture them
+Screenshots that need to be taken by hand because they could not be captured
 automatically this run.
 
 **Update:** `VBoxManage controlvm <vm> screenshotpng` was initially failing (`E_FAIL`) on
@@ -15,10 +15,10 @@ console. Anything driven through WinRM (`Invoke-Command`) runs in a non-interact
 session and never appears on the console framebuffer, so ADUC, GPMC, or any GUI tool I
 open remotely is invisible to this capture method. Getting a real ADUC/GPMC screenshot
 still requires an actual interactive logon on the VM console — which also means typing a
-password into the console, something this automation doesn't do (see CLAUDE.md and the
+password into the console, something this automation doesn't do (see PROJECT-NOTES.md and the
 global safety rules on credential entry). So: Rayan needs to log on to DC01/CL01's console
 himself (open the VM window in the VirtualBox app) for any GUI-tool screenshot; once he's
-logged in, Claude Code can take over the wake+screenshot capture from there.
+logged in, the automation can take over the wake+screenshot capture from there.
 
 **osTicket agent panel — solved from TKT-006 on:** after Rayan logs in to the built-in
 browser pane, the rendered ticket DOM is exported from the pane (scripts removed, CSRF
